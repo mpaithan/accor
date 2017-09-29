@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://soa.coe.com/CommonTypes/Mediation/Framework/FlatFile"
+	 targetNamespace="http://soa.coe.com/CommonTypes/Mediation/Framework/FlatFile"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="FileRoot" type="starterStatus_type"/>
+	<xs:complexType name="starterStatus_type">
+		<xs:sequence>
+			<xs:element name="fileinfo" type="fileinfotype" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="fileinfotype">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="TextContent" type="xs:string"/>
+			<xs:element name="timestamp" type="xs:string" minOccurs="0"/>
+			<xs:element name="Comment" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

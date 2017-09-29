@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://soa.coe.com/CommonTypes/Mediation/Framework/Contact" xmlns:tns="http://soa.coe.com/CommonTypes/Mediation/Framework/Contact" elementFormDefault="qualified">
+
+	<complexType name="ContactType">
+		<sequence>
+			<element name="AccountId" type="string"/>
+			<element name="ContactId" type="string"/>
+			<element name="Source" type="string"  minOccurs="0"/>
+			<element name="ContactType" type="string"  minOccurs="0"/>
+			<element name="GisTdId" type="string"  minOccurs="0"/>
+			<element name="GalaxyTeacherNumber" type="string"  minOccurs="0"/>
+			<element name="FirstName" type="string"/>
+			<element name="MiddleName" type="string"/>
+			<element name="LastName" type="string"/>
+			<element name="Salutation" type="string"  minOccurs="0"/>
+			<element name="Suffix" type="string"  minOccurs="0"/>
+			<element name="CellPhone" type="string"/>
+			<element name="Fax" type="string"  minOccurs="0"/>
+			<element name="HomePhone" type="string"  minOccurs="0"/>
+			<element name="WorkPhone" type="string"  minOccurs="0"/>
+			<element name="WorkEmailAddress" type="string"  minOccurs="0"/>
+			<element name="PersonalEmailAddress" type="string"/>
+			<element name="AddressLine1" type="string"/>
+			<element name="AddressLine2" type="string"/>
+			<element name="AddressCity" type="string"/>
+			<element name="AddressState" type="string"/>
+			<element name="AddressPostalCode" type="string"/>
+			<element name="AddressCountry" type="string"/>
+			<element name="Gender" type="string"/>
+			<element name="BirthDate" type="string"/>
+			<element name="WhichAddressForShipping" type="string"  minOccurs="0"/>
+			<element name="PreferredPhone" type="string"  minOccurs="0"/>
+			<element name="PreferredEmail" type="string"  minOccurs="0"/>
+			<element name="SalesRep" type="string"  minOccurs="0"/>
+			<element name="ModifiedBy" type="string"  minOccurs="0"/>
+			<element name="GalaxyEmployeeId" type="string"  minOccurs="0"/>
+			<element name="GisEmployeeId" type="string"  minOccurs="0"/>
+			<element name="GalaxySchoolNumber" type="string"  minOccurs="0"/>
+			<element name="GroupNumber" type="string"  minOccurs="0"/>
+		</sequence>
+	</complexType>
+
+	<element name="Contact" type="tns:ContactType"/>
+</schema>
